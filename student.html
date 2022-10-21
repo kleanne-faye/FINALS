@@ -20,13 +20,13 @@
              <tr>
                 <td>ID Number</td> 
                 <td>
-                    <input type="number" name="MobileNumber" maxlength="11" placeholder="Enter ID with dash" />
+                    <input type="number" name="MobileNumber" maxlength="11" placeholder="Enter ID with dash (22-9562-547)" required="" />
                 </td>
             </tr>
             <!--------------------- First Name ------------------------------------------>
             <tr>
                 <td>First Name</td>
-                <td><input type="text" name="FirstName" maxlength="50" placeholder="Enter Your Name" required="" />
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Enter Your First Name" required="" />
                 </td>
             </tr>
             <!------------------------ Last Name --------------------------------------->
@@ -35,28 +35,32 @@
                 <td><input type="text" name="LastName" maxlength="50" placeholder="Enter Your Last Name" required="" />
                 </td>
             </tr>
+            <!------------------------ Middle Name --------------------------------------->
+            <tr>
+                <td>Middle Name</td>
+                <td><input type="text" name="MiddleName" maxlength="50" placeholder="Enter Your Middle Name" required="" />
+                </td>
+            </tr>
             <!-------------------------- Email ID ------------------------------------->
             <tr>
                 <td>Email Address</td>
-                <td><input type="email" name="EmailID" maxlength="100" placeholder="uc@email.com" /></td>
+                <td><input type="email" name="EmailID" maxlength="100" placeholder="uc@email.com" required="" /></td>
             </tr>
             <!-------------------------- Mobile Number ------------------------------------->
             <tr>
                 <td>Mobile Number</td>
                 <td>
-                    <input type="number" name="MobileNumber" maxlength="13" placeholder="+63***" />
+                    <input type="number" name="MobileNumber" maxlength="13" placeholder="+63**********" required=""/>
                 </td>
             </tr>
-            <!---------------------- Gender ------------------------------------->
+            <!---------------------- Sex ------------------------------------->
             <tr>
-                <td>Gender</td>
+                <td>Sex</td>
                 <td>
                     <input type="radio" name="Gender" value="Male" />
                     Male
                     <input type="radio" name="Gender" value="Female" />
                     Female
-                    <input type="radio" name="Gender" value="Others"/>
-                    Others
                 </td>
             </tr>
             <!--------------------------Date Of Birth----------------------------------->
@@ -64,31 +68,33 @@
                 <td>Date of Birth</td>
 
                 <td>
-                    <input type="date" name="user_dob" placeholder="Date of Birth">
+                    <input type="date" name="user_dob" placeholder="Date of Birth" required="">
                 </td>
             </tr>
             <!------------------------- Address ---------------------------------->
             <tr>
                 <td>Address<br /><br /><br /></td>
-                <td><textarea name="address" rows="5" cols="50" placeholder="711-2880 Nulla St. Mankato Mississippi 96522"></textarea></td>
+                <td><textarea name="address" rows="2" cols="50" placeholder="711-2880 Nulla St. Mankato Mississippi 96522" required=""></textarea></td>
             </tr>
-            <!-------------------------- Province ------------------------------------->
+            <!-------------------------- Province -----------------------------------
             <tr>
                 <td>Province</td>
                 <td><input type="text" name="province" maxlength="50" placeholder="Enter your Province" />
                     
                 </td>
             </tr>
-            <!---------------------------- Municipality ----------------------------------->
+            -->
+            <!---------------------------- Municipality ---------------------------------
             <tr>
                 <td>Municipality</td>
                 <td><input type="text" name="Municipality" maxlength="50" placeholder="Enter your Municipality" />
                 </td>
             </tr>
+            -->
             <!----- -------------------- ZipCode-------------------------------------->
             <tr>
                 <td>Zip Code</td>
-                <td><input type="Number" name="ZipCode" maxlength="6" placeholder="Enter zipcode" />
+                <td><input type="Number" name="ZipCode" maxlength="6" placeholder="Enter zipcode" required="" />
                 </td>
             </tr>
             
@@ -162,7 +168,7 @@
                 </td>
             </tr>
             -->
-            <!-----------------------Qualification---------------------------------------->
+            <!-----------------------Qualification---------------------------------------
              <tr>
                 <td>Elementary School</td>
                 <td><input type="text" name="ElementarySchool" placeholder="Name of School" /></td>
@@ -171,37 +177,37 @@
                 <td>High School</td>
                 <td><input type="text" name="HighSchool" placeholder="Name of School" /></td>
             </tr>
+             -->
             <!---------------------------- Courses ----------------------------------->
             <tr>
-                <td>Courses<br />Applied For</td>
+                <td>Course <br>Preferred</td>
                 <td>
-                    <input type="radio" name="CourseBCA" value="BCA">
-                    BCA(Bachelor of Computer Applications)<br>
-                    <input type="radio" name="CourseBCom" value="B.Com">
-                    B.Com(Bachelor of Commerce)<br>
-                    <input type="radio" name="CourseBSc" value="B.Sc">
-                    B.Sc(Bachelor of Science)<br>
-                    <input type="radio" name="CourseBA" value="B.A">
-                    BA(Bachelor of Arts)<br>
-                    <input type="radio" name="CourseMCA" value="BCA">
-                    MCA(Master of Computer Applications)<br>
-                    <input type="radio" name="CourseMCom" value="B.Com">
-                    M.Com(Master of Commerce)<br>
-                    <input type="radio" name="CourseMSc" value="B.Sc">
-                    M.Sc(Master of Science)<br>
-                    <input type="radio" name="CourseMA" value="B.A">
-                    MA(Master of Arts)<br>
-                    <input type="radio" name="other" value="otehrs">Others<br>
-                    <textarea name="Others" rows="5" cols="50"></textarea>
+                    <select name="course" id="course">
+                        <option selected>Select Course</option> 
+                        <option value="BSIT">Bachelor of Science in Information Technology</option>
+                        <option value="BSCS">Bachelor of Science in Computer Science</option>
+                        <option value="BSDA">Bachelor of Science in Data Analytics</option>
+                        <option value="BSCoE">Bachelor of Science in Computer Engineering</option>
+                        <option value="BSCE">Bachelor of Science in Civil Engineering</option>
+                        <option value="BSA">Bachelor of Science in Architecture</option>
+                        <option value="BSAc">Bachelor of Science in Accountancy</option>
+                        <option value="BSN">Bachelor of Science in Nursing</option>
+                    </select>
+                    <br>
+                    <input type="radio" name="other" value="others">Others<br>
+                    <textarea name="Others" rows="0" cols="39"></textarea>
                 </td>
             </tr>
+               
             <!----------------------- Submit and Reset ------------------------------->
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
+                    <!--<form action="welcome.php" method="post">-->
+                    <input type="submit" value="Submit" style="background-color: #c7ddb5; border-color: #b3cf99;">
+                    <input type="reset" value="Reset" style="background-color: #f69697; border-color: #ee6b6e;">
                 </td>
             </tr>
+
         </table>
         </form>
 </body>
