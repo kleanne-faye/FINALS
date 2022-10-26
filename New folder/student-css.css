@@ -1,0 +1,60 @@
+ <style>
+        body {
+            background-color: #63D471;
+            }
+
+        h2 {
+            font-family: Century Gothic;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+        }
+        table {
+            font-family: Century Gothic;
+            color: white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;
+            background: linear-gradient(to bottom, #233329 0%, #63D471 100%); 
+           /* background: #1EBBF0;*/
+            border-collapse: collapse;
+            border: 3px solid #000000;
+            border-style: line;
+        }
+        table.inner {
+            border: 10px
+        }
+        textarea {
+        	font-size: 15px;
+        	font-family: Century Gothic;
+        }
+        select {
+        	width: 80%;
+        	font-size: 15px;
+        	font-family: Century Gothic;
+        	height: 30px;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=number],
+        input[type=date] {
+            width: 80%;
+            padding: 6px 12px;
+            margin: 5px 0;
+            font-size: 15px;
+            box-sizing: border-box;
+            font-family: Century Gothic;
+        }
+        input[type=submit],
+        input[type=reset] {
+            width: 15%;
+            padding: 8px 12px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+    </style>
