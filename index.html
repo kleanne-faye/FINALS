@@ -1,0 +1,209 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/png" href="images/login.png"/>
+    <title>Student ID Registration Form</title>
+     <link rel="stylesheet" type="text/css" href="student-css.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #254117;">
+  <a class="navbar-brand"   href="#"> 
+<div class="logo-image">
+          <img src="images/uc_logo.png" class="img-fluid" style="width: 450px; height: 100px; overflow: hidden; margin-top: -6px;">
+      </div>
+  </a>
+  </nav>
+    <h2>UC Student ID Registration Form</h3>
+        <table align="center" cellpadding="5" action="connect.php">
+            <!----------------------- STUDENT ID --------------------------->
+             <tr>
+                <td>ID Number</td> 
+                <td>
+                    <input type="tel" name="IDNumber" maxlength="11" placeholder="Enter ID with dash (22-9562-547)" required="" />
+                </td>
+            </tr>
+            <!--------------------- First Name ------------------------------------------>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Enter Your First Name" required="" />
+                </td>
+            </tr>
+            <!------------------------ Last Name --------------------------------------->
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="LastName" maxlength="50" placeholder="Enter Your Last Name" required="" />
+                </td>
+            </tr>
+            <!------------------------ Middle Name --------------------------------------->
+            <tr>
+                <td>Middle Name</td>
+                <td><input type="text" name="MiddleName" maxlength="50" placeholder="Enter Your Middle Name" required="" />
+                </td>
+            </tr>
+            <!-------------------------- Email ID ------------------------------------->
+            <tr>
+                <td>Email Address</td>
+                <td><input type="email" name="EmailID" maxlength="100" placeholder="uc@email.com" required="" /></td>
+            </tr>
+            <!-------------------------- Mobile Number ------------------------------------->
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                    <input type="tel" name="MobileNumber" maxlength="13" placeholder="+63**********" required=""/>
+                </td>
+            </tr>
+            <!---------------------- Sex ------------------------------------->
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" name="Gender" value="Male" />
+                    Male
+                    <input type="radio" name="Gender" value="Female" />
+                    Female
+                </td>
+            </tr>
+            <!--------------------------Date Of Birth----------------------------------->
+            <tr>
+                <td>Date of Birth</td>
+
+                <td>
+                    <input type="date" name="user_dob" placeholder="Date of Birth" required="">
+                </td>
+            </tr>
+            <!------------------------- Address ---------------------------------->
+            <tr>
+                <td>Address<br /><br /><br /></td>
+                <td><textarea name="address" rows="2" cols="50" placeholder="711-2880 Nulla St. Mankato Mississippi 96522" required=""></textarea></td>
+            </tr>
+            <!-------------------------- Province -----------------------------------
+            <tr>
+                <td>Province</td>
+                <td><input type="text" name="province" maxlength="50" placeholder="Enter your Province" />
+                    
+                </td>
+            </tr>
+            -->
+            <!---------------------------- Municipality ---------------------------------
+            <tr>
+                <td>Municipality</td>
+                <td><input type="text" name="Municipality" maxlength="50" placeholder="Enter your Municipality" />
+                </td>
+            </tr>
+            -->
+            <!----- -------------------- ZipCode-------------------------------------->
+            <tr>
+                <td>Zip Code</td>
+                <td><input type="tel" name="ZipCode" maxlength="4" placeholder="Enter zipcode" required="" />
+                </td>
+            </tr>
+            
+            <!------------------------------ Country --------------------------------->
+            <tr>
+                <td>Country</td>
+                <td><input type="text" name="Country" placeholder="Enter name of Country" /></td>
+            </tr>
+
+            <!--------------------- Parents Name ------------------------------------------>
+           <!-- <tr>
+                <th>Father's Name</th>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Enter Name" required="" />
+                </td>
+            </tr>
+            <tr>
+                <th>Occupation</th>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Father's Occupation" required="" />
+                </td>
+            </tr>
+             <tr>
+                <th>Mother's Name</th>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Enter Name" required="" />
+                </td>
+            </tr>
+            <tr>
+                <th>Occupation</th>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Mother's Occupation" required="" />
+                </td>
+            </tr>
+             <tr>
+                <th>Guardian's Name</th>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Enter Name" required="" />
+                </td>
+            </tr>
+            <tr>
+                <th>Relationship</th>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="Daughter/Son/Relative" required="" />
+                </td>
+            </tr>
+            <tr>
+                <td>Guardian's Mobile Number</td>
+                <td>
+                    <input type="number" name="MobileNumber" maxlength="13" placeholder="+63***" />
+                </td>
+            </tr>
+        -->
+
+            <!------------------------- Hobbies ------------------------------------
+            <tr>
+                <td>Hobbies <br /><br /><br /></td>
+                <td>
+                    <input type="checkbox" name="HobbyDrawing" value="Drawing" />
+                    Drawing
+                    <input type="checkbox" name="HobbySinging" value="Singing" />
+                    Singing
+                    <input type="checkbox" name="HobbyDancing" value="Dancing" />
+                    Dancing
+                    <input type="checkbox" name="HobbyCooking" value="Cooking" />
+                    Sketching
+                    <br />
+                    <input type="checkbox" name="HobbyOther" value="Other">
+                    Others
+                    <input type="text" name="Other_Hobby" maxlength="50" placeholder="Ex- Teaching" />
+                    
+                </td>
+            </tr>
+            -->
+            <!-----------------------Qualification---------------------------------------
+             <tr>
+                <td>Elementary School</td>
+                <td><input type="text" name="ElementarySchool" placeholder="Name of School" /></td>
+            </tr>
+            <tr>
+                <td>High School</td>
+                <td><input type="text" name="HighSchool" placeholder="Name of School" /></td>
+            </tr>
+             -->
+            <!---------------------------- Courses ----------------------------------->
+            <tr>
+                <td>Course <br>Preferred</td>
+                <td>
+                    <select name="course" id="course">
+                        <option selected>Select Course</option> 
+                        <option value="BSIT">Bachelor of Science in Information Technology</option>
+                        <option value="BSCS">Bachelor of Science in Computer Science</option>
+                        <option value="BSDA">Bachelor of Science in Data Analytics</option>
+                        <option value="BSCoE">Bachelor of Science in Computer Engineering</option>
+                        <option value="BSCE">Bachelor of Science in Civil Engineering</option>
+                        <option value="BSA">Bachelor of Science in Architecture</option>
+                        <option value="BSAc">Bachelor of Science in Accountancy</option>
+                        <option value="BSN">Bachelor of Science in Nursing</option>
+                    </select>
+                    <br>
+                    <input type="radio" name="other" value="others">Others<br>
+                    <textarea name="Others" rows="0" cols="39"></textarea>
+                </td>
+            </tr>
+               
+            <!----------------------- Submit and Reset ------------------------------->
+            <tr>
+                <td colspan="2" align="center">
+                    <!--<form action="welcome.php" method="post">-->
+                    <input type="submit" value="Submit" style="background-color: #c7ddb5; border-color: #b3cf99;">
+                    <input type="reset" value="Reset" style="background-color: #f69697; border-color: #ee6b6e;">
+                </td>
+            </tr>
+
+        </table>
+        </form>
+</body>
+</html>
